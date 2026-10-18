@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFZ Autoexport & Autoankauf Deutschland | Sofort Bargeld & Bundesweite Abholung</title>
+    <meta name="description" content="KFZ Autoexport & Autoankauf in ganz Deutschland. Wir kaufen PKW, LKW, Unfallwagen, Fahrzeuge mit Motorschaden oder ohne TÜV zu fairen Bestpreisen. Sofortige Barzahlung & kostenlose Abholung vor Ort!">
+    <meta name="keywords" content="Autoankauf, Autoexport, KFZ Ankauf, Unfallwagen Ankauf, Motorschaden Ankauf, Auto verkaufen, Deutschland">
+    
+    <!-- Open Graph / Meta -->
+    <meta property="og:title" content="KFZ Autoexport & Autoankauf Deutschland">
+    <meta property="og:description" content="Verkaufen Sie Ihr Fahrzeug schnell, sicher & zum Höchstpreis. Bundesweite Abholung & Sofortzahlung!">
+    <meta property="og:type" content="website">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            500: '#2563eb',
+                            600: '#1d4ed8',
+                            700: '#1e40af',
+                            800: '#1e3a8a',
+                            accent: '#f59e0b',
+                            accentHover: '#d97706',
+                            success: '#10b981'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Font Awesome & Google Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .hero-pattern {
+            background-color: #0f172a;
+            background-image: radial-gradient(rgba(37, 99, 235, 0.25) 1px, transparent 1px);
+            background-size: 32px 32px;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Top Info Bar -->
+    <div class="bg-slate-900 text-slate-300 text-xs sm:text-sm py-2 px-4 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+            <div class="flex items-center space-x-4 rtl:space-x-reverse">
+                <span class="flex items-center text-emerald-400 font-medium">
+                    <span class="relative flex h-2 w-2 mr-2">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                    </span>
+                    24/7 Ankauf-Service Deutschlandweit
+                </span>
+                <span class="hidden md:inline text-slate-500">|</span>
+                <span class="hidden md:inline"><i class="fa-solid fa-truck-fast text-brand-accent mr-1"></i> Kostenlose Abholung vor Ort</span>
+            </div>
+            <div class="flex items-center space-x-6 text-xs sm:text-sm">
+                <a href="mailto:autoankauf.verkaufen.export@gmail.com" class="hover:text-white flex items-center transition">
+                    <i class="fa-solid fa-envelope mr-1.5 text-brand-accent"></i> autoankauf.verkaufen.export@gmail.com
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Brand Logo -->
+                <a href="#" class="flex items-center space-x-3">
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-brand-700 to-brand-500 flex items-center justify-center text-white shadow-lg shadow-brand-500/30">
+                        <i class="fa-solid fa-car-side text-2xl"></i>
+                    </div>
+                    <div>
+                        <span class="text-xl sm:text-2xl font-extrabold tracking-tight text-slate-900 block leading-tight">
+                            KFZ<span class="text-brand-600">-Autoexport</span><span class="text-brand-accent text-sm sm:text-base">.de</span>
+                        </span>
+                        <span class="text-[11px] font-semibold text-slate-500 tracking-wider uppercase block">Ankauf & Export Deutschland</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden lg:flex items-center space-x-8 font-medium text-slate-600 text-sm">
+                    <a href="#bewertung" class="hover:text-brand-600 transition">Online-Bewertung</a>
+                    <a href="#vorteile" class="hover:text-brand-600 transition">Ihre Vorteile</a>
+                    <a href="#ablauf" class="hover:text-brand-600 transition">Ablauf</a>
+                    <a href="#leistungen" class="hover:text-brand-600 transition">Leistungen</a>
+                    <a href="#faq" class="hover:text-brand-600 transition">FAQ</a>
+                </nav>
+
+                <!-- Header CTA Buttons -->
+                <div class="flex items-center space-x-3">
+                    <a href="#bewertung" class="inline-flex items-center justify-center px-5 py-2.5 rounded-xl font-bold text-sm text-white bg-brand-600 hover:bg-brand-700 shadow-md shadow-brand-500/25 transition">
+                        <i class="fa-solid fa-file-invoice mr-2 text-brand-accent"></i>
+                        Angebot erhalten
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section with Integrated Valuation Form -->
+    <section class="hero-pattern text-white pt-12 pb-20 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Column: Value Proposition -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-500/10 border border-brand-500/30 text-brand-300 text-xs sm:text-sm font-semibold">
+                        <i class="fa-solid fa-shield-halved text-brand-accent"></i>
+                        100% Seriös • Ohne Garantie oder Gewährleistung für Verkäufer
+                    </div>
+
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.15]">
+                        Auto schnell & sicher verkaufen zum <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-200">Höchstpreis</span>
+                    </h1>
+
+                    <p class="text-slate-300 text-base sm:text-lg max-w-2xl leading-relaxed">
+                        Wir kaufen Fahrzeuge aller Art in ganz Deutschland. Ob gepflegter Gebrauchtwagen, Unfallfahrzeug, Motorschaden oder ohne TÜV – wir garantieren Ihnen ein schnelles Angebot, sofortige Barzahlung und eine kostenlose Abholung vor Ihrer Haustür.
+                    </p>
+
+                    <!-- Trust USPs -->
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-4 border-t border-slate-800 text-left">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-money-bill-wave"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-sm text-white">Sofort Bargeld</h4>
+                                <p class="text-xs text-slate-400">oder Expressüberweisung</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 rounded-lg bg-blue-500/20 text-blue-400 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-truck"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-sm text-white">Gratis Abholung</h4>
+                                <p class="text-xs text-slate-400">Bundesweit vor Ort</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-3 col-span-2 sm:col-span-1">
+                            <div class="w-10 h-10 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-file-circle-check"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-sm text-white">Abmeldeservice</h4>
+                                <p class="text-xs text-slate-400">Kostenlos inklusive</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Instant Valuation Form -->
+                <div class="lg:col-span-5" id="bewertung">
+                    <div class="bg-white rounded-3xl p-6 sm:p-8 text-slate-900 shadow-2xl border border-slate-100 relative">
+                        <div class="mb-6">
+                            <span class="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-50 text-brand-700 mb-2">
+                                Kostenlose Express-Bewertung
+                            </span>
+                            <h3 class="text-2xl font-extrabold text-slate-900">Fahrzeugdaten eintragen</h3>
+                            <p class="text-xs text-slate-500 mt-1">Erhalten Sie in wenigen Minuten Ihr unverbindliches Angebot</p>
+                        </div>
+
+                        <form id="carForm" class="space-y-4" onsubmit="event.preventDefault(); submitForm();">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Marke *</label>
+                                    <input type="text" id="brand" required placeholder="z. B. Volkswagen, BMW, Audi" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-sm focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Modell *</label>
+                                    <input type="text" id="model" required placeholder="z. B. Golf, 3er, A4" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-sm focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Baujahr / Erstzulassung *</label>
+                                    <input type="number" id="year" required min="1980" max="2026" placeholder="z. B. 2016" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-sm focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Kilometerstand (ca.) *</label>
+                                    <input type="number" id="mileage" required placeholder="z. B. 150000" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-sm focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Kraftstoff</label>
+                                    <select id="fuel" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-sm focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition bg-white">
+                                        <option value="Diesel">Diesel</option>
+                                        <option value="Benzin">Benzin</option>
+                                        <option value="Hybrid">Hybrid</option>
+                                        <option value="Elektro">Elektro</option>
+                                        <option value="Autogas (LPG/CNG)">Autogas (LPG/CNG)</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Zustand des Fahrzeugs *</label>
+                                    <select id="condition" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-sm focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition bg-white">
+                                        <option value="Gebrauchtwagen (Fahrbereit)">Gebrauchtwagen (Fahrbereit)</option>
+                                        <option value="Unfallwagen / Blechschaden">Unfallwagen / Blechschaden</option>
+                                        <option value="Motorschaden / Getriebeschaden">Motorschaden / Getriebeschaden</option>
+                                        <option value="Ohne TÜV / TÜV fällig">Ohne TÜV / TÜV fällig</option>
+                                        <option value="Nicht fahrbereit / Schrottfahrzeug">Nicht fahrbereit</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">PLZ / Standort *</label>
+                                    <input type="text" id="location" required placeholder="z. B. 10115 Berlin" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-sm focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Preisvorstellung (€)</label>
+                                    <input type="number" id="price" placeholder="Ihre Wunschsumme" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-sm focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition">
+                                </div>
+                            </div>
+
+                            <div class="border-t border-slate-100 pt-3">
+                                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Telefon / WhatsApp *</label>
+                                <input type="tel" id="phone" required placeholder="Ihre Rufnummer für das Angebot" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-sm focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition">
+                            </div>
+
+                            <!-- CTA Buttons -->
+                            <div class="space-y-2 pt-2">
+                                <button type="submit" class="w-full py-3.5 px-4 rounded-xl font-bold text-white bg-brand-600 hover:bg-brand-700 shadow-lg shadow-brand-600/30 transition text-sm flex items-center justify-center space-x-2">
+                                    <i class="fa-solid fa-paper-plane mr-2"></i>
+                                    <span>Kostenloses Angebot anfordern</span>
+                                </button>
+                                
+                                <button type="button" onclick="sendWhatsApp();" class="w-full py-3 px-4 rounded-xl font-bold text-white bg-emerald-600 hover:bg-emerald-700 shadow-md shadow-emerald-600/20 transition text-sm flex items-center justify-center space-x-2">
+                                    <i class="fa-brands fa-whatsapp text-lg mr-2"></i>
+                                    <span>Schnellanfrage via WhatsApp senden</span>
+                                </button>
+                            </div>
+
+                            <p class="text-[11px] text-slate-400 text-center leading-tight">
+                                <i class="fa-solid fa-lock mr-1"></i> Ihre Daten werden streng vertraulich nach DSGVO behandelt und nicht weitergegeben.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl p-8 max-w-md w-full shadow-2xl text-center space-y-4">
+            <div class="w-16 h-16 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto text-3xl">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <h3 class="text-2xl font-extrabold text-slate-900">Vielen Dank für Ihre Anfrage!</h3>
+            <p class="text-slate-600 text-sm">
+                Wir haben Ihre Fahrzeugdaten erfolgreich erfasst. Unser Bewertungsteam wird sich in Kürze mit einem fairen Bestpreis-Angebot bei Ihnen melden.
+            </p>
+            <button onclick="document.getElementById('successModal').classList.add('hidden')" class="w-full py-3 rounded-xl bg-brand-600 text-white font-bold hover:bg-brand-700 transition">
+                Schließen
+            </button>
+        </div>
+    </div>
+
+    <!-- Advantages / Ihre Vorteile -->
+    <section id="vorteile" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-bold uppercase tracking-wider text-brand-600 bg-brand-50 px-3 py-1 rounded-full">Warum kfz-autoexport.de?</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">Ihre Vorteile beim professionellen KFZ-Ankauf</h2>
+                <p class="text-slate-500 mt-3 text-base">Wir machen den Autoverkauf so einfach, sicher und lukrativ wie möglich für Sie.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Advantage 1 -->
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:shadow-xl transition-all duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-amber-500/10 text-brand-accent flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-sack-dollar"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Bester Preis & Sofortauszahlung</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Durch unser internationales Export-Netzwerk können wir oft deutlich höhere Ankaufspreise bieten als lokale Autohändler. Geld gibt es sofort in bar oder per Echtzeitüberweisung bei Fahrzeugübergabe.
+                    </p>
+                </div>
+
+                <!-- Advantage 2 -->
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:shadow-xl transition-all duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-500/10 text-brand-600 flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Kostenlose Abholung Bundesweit</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Egal ob Berlin, Hamburg, München, Köln, Frankfurt oder kleine Dörfer: Wir holen Ihr Fahrzeug mit eigenen Transportern kostenfrei direkt an Ihrem Wunschort ab.
+                    </p>
+                </div>
+
+                <!-- Advantage 3 -->
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:shadow-xl transition-all duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-emerald-500/10 text-emerald-600 flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-file-contract"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Keine Garantie & Gewährleistung</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Als Privatverkäufer sind Sie bei uns auf der sicheren Seite: Der Verkauf erfolgt mit rechtssicherem Kaufvertrag unter vollständigem Ausschluss jeglicher Gewährleistung. Keine Reklamationen im Nachhinein!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3-Step Process -->
+    <section id="ablauf" class="py-20 bg-slate-900 text-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-bold uppercase tracking-wider text-brand-accent bg-amber-500/10 px-3 py-1 rounded-full">So einfach geht's</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold mt-3">In 3 einfachen Schritten zum Verkauf</h2>
+                <p class="text-slate-400 mt-3 text-base">Sparen Sie sich lange Inserate, Probefahrten und lästige Preisverhandlungen.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+                <!-- Step 1 -->
+                <div class="relative bg-slate-800/60 p-8 rounded-3xl border border-slate-700/60 text-center">
+                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-tr from-brand-600 to-brand-400 text-white font-extrabold text-2xl flex items-center justify-center mx-auto mb-6 shadow-lg shadow-brand-500/30">
+                        1
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Fahrzeugdaten senden</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Füllen Sie unser kurzes Online-Formular aus oder kontaktieren Sie uns direkt per WhatsApp mit den wichtigsten Fahrzeugdaten und Bildern.
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="relative bg-slate-800/60 p-8 rounded-3xl border border-slate-700/60 text-center">
+                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-tr from-amber-500 to-amber-300 text-slate-950 font-extrabold text-2xl flex items-center justify-center mx-auto mb-6 shadow-lg shadow-amber-500/30">
+                        2
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Angebot erhalten</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Innerhalb kürzester Zeit bewerten unsere Export-Experten Ihr Auto und unterbreiten Ihnen ein faires, marktgerechtes Festpreis-Angebot.
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="relative bg-slate-800/60 p-8 rounded-3xl border border-slate-700/60 text-center">
+                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-tr from-emerald-600 to-emerald-400 text-white font-extrabold text-2xl flex items-center justify-center mx-auto mb-6 shadow-lg shadow-emerald-500/30">
+                        3
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Abholung & Geld erhalten</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Wir holen Ihr Auto kostenlos bei Ihnen ab. Sie erhalten das Geld sofort bar auf die Hand oder per Banküberweisung sowie eine ordentliche Abmeldebestätigung.
+                    </p>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center">
+                <a href="#bewertung" class="inline-flex items-center px-8 py-4 rounded-xl font-bold text-white bg-brand-600 hover:bg-brand-500 shadow-xl shadow-brand-600/30 transition">
+                    <i class="fa-solid fa-bolt mr-2 text-brand-accent"></i>
+                    Jetzt Fahrzeug kostenlos bewerten lassen
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services / Was wir ankaufen -->
+    <section id="leistungen" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-bold uppercase tracking-wider text-brand-600 bg-brand-50 px-3 py-1 rounded-full">Unser Spektrum</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">Wir kaufen Fahrzeuge in jedem Zustand</h2>
+                <p class="text-slate-500 mt-3 text-base">Für den Export gibt es kaum ein Fahrzeug, für das wir keine Verwendung haben.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
+                    <div class="text-brand-600 text-2xl mb-4"><i class="fa-solid fa-car"></i></div>
+                    <h4 class="font-bold text-slate-900 mb-2">Gebrauchtwagen aller Art</h4>
+                    <p class="text-slate-500 text-xs leading-relaxed">Vom Kleinwagen bis zur Luxuslimousine. Alle Marken, Modelle und Baujahre willkommen.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
+                    <div class="text-brand-accent text-2xl mb-4"><i class="fa-solid fa-car-burst"></i></div>
+                    <h4 class="font-bold text-slate-900 mb-2">Unfallwagen Ankauf</h4>
+                    <p class="text-slate-500 text-xs leading-relaxed">Fahrzeuge mit Frontschaden, Heckschaden, Seitenschaden oder wirtschaftlichem Totalschaden.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
+                    <div class="text-red-500 text-2xl mb-4"><i class="fa-solid fa-gears"></i></div>
+                    <h4 class="font-bold text-slate-900 mb-2">Motorschaden & Getriebeschaden</h4>
+                    <p class="text-slate-500 text-xs leading-relaxed">Fahrzeuge mit defekter Zylinderkopfdichtung, Zahnriemenriss oder Getriebedefekt.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
+                    <div class="text-emerald-500 text-2xl mb-4"><i class="fa-solid fa-clipboard-check"></i></div>
+                    <h4 class="font-bold text-slate-900 mb-2">Fahrzeuge ohne TÜV</h4>
+                    <p class="text-slate-500 text-xs leading-relaxed">Hohe Reparaturkosten für den TÜV? Sparen Sie sich das Geld und verkaufen Sie direkt an uns.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-xs font-bold uppercase tracking-wider text-brand-600 bg-brand-50 px-3 py-1 rounded-full">Antworten auf Ihre Fragen</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">Häufig gestellte Fragen (FAQ)</h2>
+            </div>
+
+            <div class="space-y-4">
+                <details class="group bg-slate-50 rounded-2xl p-6 border border-slate-100 cursor-pointer">
+                    <summary class="flex justify-between items-center font-bold text-slate-900 list-none">
+                        <span>Wie schnell erhalte ich mein Geld?</span>
+                        <span class="text-brand-600 transition group-open:rotate-180"><i class="fa-solid fa-chevron-down"></i></span>
+                    </summary>
+                    <p class="mt-4 text-slate-600 text-sm leading-relaxed">
+                        Die Bezahlung erfolgt sofort bei der Übergabe des Fahrzeugs. Sie entscheiden frei, ob Sie den vollen Kaufbetrag direkt in bar erhalten oder eine bankbestätigte Express-Echtzeitüberweisung auf Ihr Bankkonto bevorzugen.
+                    </p>
+                </details>
+
+                <details class="group bg-slate-50 rounded-2xl p-6 border border-slate-100 cursor-pointer">
+                    <summary class="flex justify-between items-center font-bold text-slate-900 list-none">
+                        <span>Wer kümmert sich um die Abmeldung bei der Zulassungsstelle?</span>
+                        <span class="text-brand-600 transition group-open:rotate-180"><i class="fa-solid fa-chevron-down"></i></span>
+                    </summary>
+                    <p class="mt-4 text-slate-600 text-sm leading-relaxed">
+                        Auf Wunsch übernehmen wir die vollständige Abmeldung Ihres Fahrzeugs bei der Zulassungsstelle absolut kostenlos für Sie. Innerhalb von 3 Werktagen senden wir Ihnen den offiziellen Nachweis per E-Mail oder Post zu.
+                    </p>
+                </details>
+
+                <details class="group bg-slate-50 rounded-2xl p-6 border border-slate-100 cursor-pointer">
+                    <summary class="flex justify-between items-center font-bold text-slate-900 list-none">
+                        <span>Muss ich für spätere Mängel haften (Garantie)?</span>
+                        <span class="text-brand-600 transition group-open:rotate-180"><i class="fa-solid fa-chevron-down"></i></span>
+                    </summary>
+                    <p class="mt-4 text-slate-600 text-sm leading-relaxed">
+                        Nein! Als gewerblicher Autoexport-Ankäufer schließen wir im Kaufvertrag jegliche Gewährleistungs- und Garantieansprüche gegenüber Ihnen als Privatperson vollständig aus. Sie tragen nach der Übergabe keinerlei Risiko mehr.
+                    </p>
+                </details>
+
+                <details class="group bg-slate-50 rounded-2xl p-6 border border-slate-100 cursor-pointer">
+                    <summary class="flex justify-between items-center font-bold text-slate-900 list-none">
+                        <span>Kosten die Bewertung oder Abholung etwas?</span>
+                        <span class="text-brand-600 transition group-open:rotate-180"><i class="fa-solid fa-chevron-down"></i></span>
+                    </summary>
+                    <p class="mt-4 text-slate-600 text-sm leading-relaxed">
+                        Nein, unser gesamter Service ist für Sie zu 100% kostenlos und unverbindlich. Es fallen keinerlei Anfahrts-, Bewertungs- oder Bearbeitungsgebühren an.
+                    </p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-800 text-xs sm:text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <div class="space-y-4 md:col-span-2">
+                    <div class="flex items-center space-x-3 text-white">
+                        <i class="fa-solid fa-car-side text-brand-500 text-2xl"></i>
+                        <span class="text-xl font-extrabold tracking-tight">KFZ-Autoexport<span class="text-brand-accent">.de</span></span>
+                    </div>
+                    <p class="text-slate-400 max-w-md text-xs leading-relaxed">
+                        Ihr vertrauenswürdiger und seriöser Partner für bundesweiten Autoankauf und KFZ-Export. Schnelle Abwicklung, sofortige Bezahlung und bester Kundenservice.
+                    </p>
+                </div>
+
+                <div>
+                    <h5 class="text-white font-bold mb-4 uppercase text-xs tracking-wider">Schnelllinks</h5>
+                    <ul class="space-y-2">
+                        <li><a href="#bewertung" class="hover:text-white transition">Fahrzeugbewertung</a></li>
+                        <li><a href="#vorteile" class="hover:text-white transition">Ihre Vorteile</a></li>
+                        <li><a href="#ablauf" class="hover:text-white transition">Ablauf</a></li>
+                        <li><a href="#faq" class="hover:text-white transition">Häufige Fragen</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h5 class="text-white font-bold mb-4 uppercase text-xs tracking-wider">Kontakt</h5>
+                    <p class="text-slate-400 mb-2">E-Mail: <a href="mailto:autoankauf.verkaufen.export@gmail.com" class="text-white hover:underline">autoankauf.verkaufen.export@gmail.com</a></p>
+                    <p class="text-slate-400 mb-2">Bundesweiter Service in ganz Deutschland</p>
+                    <div class="mt-4 flex space-x-3 text-slate-400">
+                        <span class="text-xs text-emerald-400"><i class="fa-solid fa-circle text-[8px] mr-1"></i> Erreichbar 24/7</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-slate-800 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4">
+                <p>&copy; 2026 kfz-autoexport.de. Alle Rechte vorbehalten.</p>
+                <div class="flex space-x-6">
+                    <a href="#impressum" onclick="alert('Impressum: kfz-autoexport.de | E-Mail: autoankauf.verkaufen.export@gmail.com'); return false;" class="hover:text-white">Impressum</a>
+                    <a href="#datenschutz" onclick="alert('Datenschutz: Ihre Daten werden ausschließlich zur Bearbeitung Ihrer Anfrage verarbeitet und nicht an Dritte weitergegeben.'); return false;" class="hover:text-white">Datenschutz</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive JavaScript -->
+    <script>
+        function submitForm() {
+            document.getElementById('successModal').classList.remove('hidden');
+        }
+
+        function sendWhatsApp() {
+            const brand = document.getElementById('brand').value || 'Nicht angegeben';
+            const model = document.getElementById('model').value || 'Nicht angegeben';
+            const year = document.getElementById('year').value || 'Nicht angegeben';
+            const mileage = document.getElementById('mileage').value || 'Nicht angegeben';
+            const condition = document.getElementById('condition').value;
+            const location = document.getElementById('location').value || 'Deutschland';
+            const price = document.getElementById('price').value ? document.getElementById('price').value + ' €' : 'VB';
+            const phone = document.getElementById('phone').value || '';
+
+            const text = encodeURIComponent(
+                `Hallo kfz-autoexport.de Team,\n` +
+                `Ich möchte mein Fahrzeug unverbindlich bewerten lassen:\n\n` +
+                `🚗 Marke/Modell: ${brand} ${model}\n` +
+                `📅 Baujahr: ${year}\n` +
+                `🛣️ Kilometerstand: ${mileage} km\n` +
+                `⚙️ Zustand: ${condition}\n` +
+                `📍 Standort: ${location}\n` +
+                `💰 Preisvorstellung: ${price}\n` +
+                `📞 Meine Rufnummer: ${phone}\n\n` +
+                `Bitte um ein unverbindliches Angebot!`
+            );
+
+            // Open WhatsApp (User can configure their target business phone number)
+            window.open(`https://api.whatsapp.com/send?text=${text}`, '_blank');
+        }
+    </script>
+</body>
+</html>
